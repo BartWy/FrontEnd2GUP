@@ -1,0 +1,45 @@
+body{background-color:lightcyan;
+}
+
+header{
+    text-align: center;
+    font-size: 40px;
+    color:darkblue;
+}
+#amount{
+text-align: center;
+font-size: 16px;
+box-sizing: 16px;
+padding: 3px;
+border-color:#4CAF50;
+height: 50px; 
+width: 200px;
+}
+
+#kwota{
+    
+    font-size: 30px;
+    color:#4CAF50;
+    margin-bottom: 20px;
+    
+}
+#usd{
+   font-size: 30px;
+    color:#4CAF50;
+    margin-top: 20px;
+}
+
+#count{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#conteiner{
+    text-align: center;
+    margin-top: 30px;
+}
