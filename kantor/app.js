@@ -5,8 +5,8 @@ var btn = document.getElementById('count');
 
 
 btn.addEventListener('click', function(){
-    var res = document.getElementById('result');
-    res.innerHTML = "Kwata w USD " + (parseFloat(amount.value)/ 3.65).toFixed(2);
+    var res = document.getElementById('usd');
+    res.innerHTML = "Kwota w USD " + (parseFloat(amount.value)/ 3.65).toFixed(2);
    
     
 });
