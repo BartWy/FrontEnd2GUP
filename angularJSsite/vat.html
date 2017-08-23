@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="vatApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>VAT</title>
+        
+    </head>
+    
+    
+    <body>
+        
+        
+        <h1>oblicz VAT</h1>
+        
+        <input type="text" ng-model="napis"placeholder="wpisz kwote">
+        
+            <select  ng-model="unit">
+            <option>-</option>
+            <option>0%</option>
+            <option>8%</option>
+            <option>23%</option>
+            </select>
+        
+        <button ng-click="vat()">PRZELICZ</button>
+        
+        <div ng-show="0%">{{ A|number : 1 }} F</div>
+        <div ng-show="8%">{{ B|number : 1 }} K</div>
+        <div ng-show="23%">{{ C|number : 1 }} C</div>
+        
+    </body>
+    
+    
+    
+</html>
