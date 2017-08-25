@@ -1,0 +1,77 @@
+body{
+    background-color:lightpink;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://wallpaperbrowse.com/media/images/cool-wallpaper-15.jpg');
+     background-repeat:round;
+}
+#welcome{
+font-family: 'Roboto', sans-serif; 
+font-size: 70px;
+color: deeppink;
+    
+}
+
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.m-b100{
+    margin-bottom: 100px;
+}
+
+.pizza-container:hover{
+    
+    cursor: pointer;
+}
+
+
+img {
+   animation: hue-rotate 8s infinite;
+   animation-timing-function: linear;
+}
+
+@keyframes hue-rotate {
+   0% {}
+   25% {
+       transform: rotateZ(90deg);
+   }
+   50% {
+       transform: rotateZ(180deg);
+   }
+   75% {
+       transform: rotateZ(270deg);
+   }
+   100% {
+       transform: rotateZ(360deg);
+   }
+}
+
+
+.boosters{
+    list-style: none;
+    padding: 10px, 0;
+}
+
+
+.boostItem{
+    
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: right;
+    height: 80px;
+    width: 430px;
+    padding: 10px;
+    font-size: 20px;
+    background-color:snow;
+    
+}
