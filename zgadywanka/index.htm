@@ -1,20 +1,38 @@
-<html>
-    <head>
-        <title>Zgadywanka</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-       <link rel="stylesheet" href="style.css" type="text/css">
+<!DOCTYPE html>
+<html lang="pl">
 
-    </head>
-    <body>
-        
-       <header>Zgadnij Liczbę</header>
-     <div id="conteiner">
-   <div id="liczba"> Wpisz przedział losowania</div> <input id= "od" type="text" placeholder="Od"/><input id= "do" type="text" placeholder="Do"/><input id= "typ" type="text" placeholder="Podaj swoją liczbę"/>
-        <input id ="guzik" type="button" value="zgadnij"/>
+  <head>
+
+     <meta charset="utf-8">
+     <title>Moja witryna</title>
+
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+      <body>
+        <div id="settings">
+          <h1>USTAW GRĘ!</h1>
+            <h3>Podaj zakres zgadywania:</h3>
+          <input id="from" type="text" placeholder="Od:">
+          <input id="to" type="text" placeholder="Do:">
+                      <input id="zagraj" type="submit" value="Zagraj!">
+          
+          </div>
+          
+          <div id="gra" style="display: none">
+          <h1>ZGADUJ LICZBĘ!</h1>
+     
+          <input id="UserInt" type="text" placeholder="Podaj liczbę">
          
-         </div> 
-         <script src="app.js">  </script>
+          <input id="zgaduj" type="submit" value="Zgaduj!">
+        </div>
+      
+      
+      
+      
+      
+        <script src="app.js"></script>
+
     </body>
 </html>

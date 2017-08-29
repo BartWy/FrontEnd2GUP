@@ -1,61 +1,65 @@
-console.log("test");
+var userInt = document.getElementById("UserInt");
 
+var btn = document.getElementById("zgaduj");
 
-//var liczba = Math.random() * 100; // tak było na poczatku za nim 
-//var zaokraglona = Math.floor(liczba);
-//console.log(zaokraglona);
+var poczatek = document.getElementById("from");
 
+var koniec = document.getElementById("to");
 
-var start = document.getElementById('guzik');
+var play = document.getElementById("zagraj");
 
-start.addEventListener('click', function(){
-    var pierwsza = parseInt(document.getElementById('od').value);
-    var druga = parseInt(document.getElementById('do').value);
+var gra = document.getElementById("gra");
+
+var liczba = 0;
+console.log(liczba);
+                         
+
+play.addEventListener("click", function(){
     
-       
-var losowanie =  pierwsza + Math.round(Math.random() * (druga - pierwsza));
+    liczba = Math.floor(parseInt(poczatek.value) + Math.random()*(koniec.value - poczatek.value));
+  
+    console.log(liczba);
     
-    console.log(losowanie);
-
-
-});
-                     
-                     
-
-
-
-var spr = document.getElementById('guzik');
-
-spr.addEventListener('click', function(){
-//    var typ  = document.getElementById('zaokrąglona');
-    var uzytkownik = document.getElementById('typ');
-    if(uzytkownik.value == losowanie) {
-        alert ('Brawo!')
-        
-    } 
-    else{
-        alert('bledna liczba')};
     
-    if(uzytkownik.value>losowanie){
-        alert('Podana liczba jest za duża. Podaj mniejszą wartość.')
+    if (gra.style.display == 'none') {
+    gra.style.display = 'block';
     }
-    else{
-        alert('Podana liczba jest za mała. Podaj większą wartość.')
-    }
-    
     
 });
 
 
+    
 
 
-//var amount = document.getElementById('amount');
-//var btn = document.getElementById('count');
-//
-//
-//btn.addEventListener('click', function(){
-//    var res = document.getElementById('usd');
-//    res.innerHTML = "Kwota w USD " + (parseFloat(amount.value)/ 3.65).toFixed(2);
-//   
-//    
+
+
+
+
+
+//var settings = document.getElementById("settings");
+//var gra = document.getElementById("gra");
+//zagraj.addEventListener("click", function(){
+    
+    // if (gra.style.display === 'none') {
+    //    gra.style.display = 'block';
+    // }
 //});
+
+
+
+var aud = document.getElementById("aud");
+
+
+
+btn.addEventListener("click", function(){
+   
+    if(liczba == userInt.value){
+        alert("BRAWO! LICZBA PRAWIDŁOWA!!!");
+          aud.volume = 1.0;
+    }
+    else if(liczba<userInt.value) alert("ZA DUŻO!");
+    else if(liczba>userInt.value) alert("ZA MAŁO!");
+ 
+    
+    
+});
